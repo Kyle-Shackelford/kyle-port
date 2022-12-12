@@ -15,6 +15,7 @@ a{
     text-decoration: none;
 }
 
+
 /* Jumbotron Start */
 
 .container{
@@ -77,6 +78,7 @@ a{
     background-color: crimson;
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
+    border-radius: 5px;
 }
 
 #jumbo h1:nth-child(1) span{
@@ -138,3 +140,102 @@ a{
 }
 
 /* Jumbotron End */
+
+
+
+/* Services Section */
+
+#services{
+    
+} 
+
+.services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 93.75rem;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+}
+
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 0.625rem;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#services .services-top p{
+color: black;
+font-size: 1.4rem;
+margin-top: 0.313rem;
+line-height: 2.5rem;
+font-weight: 300;
+letter-spacing: .05rem;
+}
+
+.services-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3.125rem;
+}
+
+.service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.875rem;
+    border-radius: 10px;
+    background-image: url(https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    /* opacity: .9; */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+
+#services .services-bottom .icon{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+#services .services-bottom .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-item h2{
+font-size: 2rem;
+color: white;
+margin-bottom: 0.625rem;
+}
+
+.service-item p{
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+
+
+/* Services Section End */
