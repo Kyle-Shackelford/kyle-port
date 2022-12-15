@@ -18,7 +18,7 @@ a{
 }
 
 .section-title{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500;
     color: black;
     margin-bottom: 0.625rem;
@@ -170,7 +170,8 @@ a{
 }
 
 .brand h1{
-    font-size: 34px;
+    color: #941414;
+    font-size: 30px;
     margin-left: 20px;
 }
 
@@ -185,8 +186,8 @@ a{
     }
 }
 
-
 /* Navigation End */
+
 
 /* Jumbotron Start */
 
@@ -202,6 +203,7 @@ a{
     align-items: center;
     justify-content: center;
 }
+
 
 #jumbo{
     width: 100%;
@@ -427,6 +429,10 @@ margin-bottom: 0.625rem;
 
 /* Projects */
 
+#projects{
+    background-color: olive;
+}
+
 .projects{
     flex-direction: column;
     max-width: 1200px;
@@ -489,8 +495,8 @@ transform: scale(1.1);
 /* About */
 
 #about{
-    background-color: olive;
-    color: goldenrod;
+    background-color: goldenrod;
+    color: antiquewhite;
 }
 
 .about{
@@ -510,7 +516,7 @@ transform: scale(1.1);
 }
 
 .col-right h1{
-    color: goldenrod;
+    color: antiquewhite;
 }
 
 .col-right h2{
@@ -546,6 +552,7 @@ transform: scale(1.1);
 }
 
 #contact{
+    background-color: olive;
     justify-content: center;
     align-items: center;
 }
@@ -566,6 +573,7 @@ transform: scale(1.1);
 }
 
 .contact-item{
+    background-color: antiquewhite;
     width: 60%;
     padding: 20px;
     text-align: center;
@@ -647,6 +655,16 @@ transform: scale(1.1);
     color: antiquewhite;
 }
 
+.foot-brand{
+    color: antiquewhite;
+    font-size: 11px;
+    margin-left: 20px;
+    }
+
+    .foot-brand h2{
+        font-size: 10px;
+    }
+
 /* Footer End */
 
 
@@ -654,6 +672,10 @@ transform: scale(1.1);
 /* Tablet Screen */
 
 @media screen and (min-width: 768px) {
+
+    .section-title{
+        font-size: 4.5rem;
+    }
 
     /* Jumbo */
 
@@ -698,11 +720,13 @@ transform: scale(1.1);
     .all-projects .project-info{
         font-size: 14px;
         height: 100%;
+        flex-basis: 40%;
     }
 
     .all-projects .project-img{
-        background-color: #941414;
-        height: 100%;
+        flex-basis: 125%;
+        width: 100%;
+        height: auto;
     }
 
 /* Projects End */
@@ -757,14 +781,28 @@ transform: scale(1.1);
 
 
     /* Contact End */
-}
-
-/* Tablet Screen End */
 
 
-/* Desktop Screen */
+    /* Navigation */
 
-@media screen and (min-width: 768px) {
+    .brand h1{
+        font-size: 26px;
+    }
+    .foot-brand{
+    color: antiquewhite;
+    font-size: 14px;
+    margin-left: 20px;
+    }
+
+    .foot-brand h2{
+        font-size: 12px;
+    }
+
+    #footer .brand h1{
+        font-size: 34px;
+    }
+
+
     .hamburger{
         display: none;
     }
@@ -783,11 +821,33 @@ transform: scale(1.1);
     }
 
     .nav-list ul li a{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        padding: 12px;
     }
 
     .nav-list ul a::after{
         display: none;
 }
 
+}
+
+/* Tablet Screen End */
+
+
+/* Desktop Screen */
+
+@media screen and (min-width: 1080px) {
+
+    .brand h1{
+        font-size: 36px;
+    }
+    
+    .section-title{
+        font-size: 5rem;
+}
+
+.nav-list ul li a{
+    font-size: 1.5rem;
+    padding: 20px;
+}
 }
