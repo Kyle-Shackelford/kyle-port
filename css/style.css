@@ -426,6 +426,11 @@ margin-bottom: 0.625rem;
     line-height: 1.9rem;
 }
 
+.service-item .icon{
+color: goldenrod;
+font-size: 34px;
+}
+
 /* Services Section End */
 
 
