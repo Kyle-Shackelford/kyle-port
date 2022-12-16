@@ -9,8 +9,8 @@
 
 html {
     scroll-behavior: smooth;
-font-size: 10px;
-font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -20,10 +20,11 @@ a{
 .section-title{
     font-size: 3.5rem;
     font-weight: 500;
-    color: black;
+    color: #29323c;
     margin-bottom: 0.625rem;
     letter-spacing: .2rem;
     text-align: center;
+    font-weight: 700;
 }
 
 /* Navigation */
@@ -104,7 +105,7 @@ a{
 }
 
 .nav-list ul li:hover a{
-    color: crimson;
+    color: olive;
 }
 
 .hamburger{
@@ -170,7 +171,7 @@ a{
 }
 
 .brand h1{
-    color: #941414;
+    color: goldenrod;
     font-size: 30px;
     margin-left: 20px;
 }
@@ -256,7 +257,7 @@ a{
     left: 0;
     height: 100%;
     width: 0;
-    background-color: crimson;
+    background-color: olive;
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
     /* border-radius: 5px; */
@@ -277,9 +278,9 @@ a{
 .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: crimson;
+    color: goldenrod;
     background-color: transparent;
-    border: 2px solid crimson;
+    border: 2px solid goldenrod;
     font-size: 2rem;
     letter-spacing: .1rem;
     margin-top: 30px;
@@ -289,8 +290,8 @@ a{
 }
 
 .cta:hover{
-    color: white;
-    background-color: crimson;
+    color: antiquewhite;
+    background-color: olive;
 }
 
 /* Keyframes */
@@ -308,13 +309,13 @@ a{
 
 @keyframes text_reveal{
     100%{
-        color: white;
+        color: antiquewhite;
     }
 }
 
 @keyframes text_reveal_name{
     100%{
-        color: crimson;
+        color: olive;
         /* font-weight: 500; */
     }
 }
@@ -355,6 +356,7 @@ letter-spacing: .05rem;
     flex-wrap: wrap;
     margin-top: 3.125rem;
 }
+
 
 .service-item{
     flex-basis: 80%;
@@ -450,6 +452,7 @@ margin-bottom: 0.625rem;
     justify-content: center;
     flex-direction: column;
     width: 80%;
+    gap: 20px;
 }
 
 .project-item{
@@ -467,6 +470,7 @@ margin-bottom: 0.625rem;
     padding: 30px;
     flex-basis: 50%;
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -475,6 +479,10 @@ margin-bottom: 0.625rem;
     color: antiquewhite;
     z-index: 1;
     font-size: 12px;
+}
+
+.project-info h1 h3 p{
+    text-align: center;
 }
 
 .project-img{
@@ -487,6 +495,11 @@ margin-bottom: 0.625rem;
 .project-img:hover{
 transform: scale(1.1);
 }
+
+/* .project-img img{
+width: 100%;
+height: 100%;
+} */
 
 /* Projects End */
 
@@ -515,9 +528,9 @@ transform: scale(1.1);
     width: 100%;
 }
 
-.col-right h1{
-    color: antiquewhite;
-}
+/* .col-right h1{
+    color: olive;
+} */
 
 .col-right h2{
     color: antiquewhite;
@@ -527,14 +540,24 @@ transform: scale(1.1);
     margin-bottom: .625rem;
 }
 
+
 .col-right p{
+    font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
 .col-right .cta{
-    color: antiquewhite;
+    color: olive;
+    border: olive;
     margin-bottom: 4rem;
     font-size: 1.25rem;
+    background-color: transparent;
+    border: 2px solid olive;
+}
+
+.col-right .cta:hover{
+    color: goldenrod;
+    background-color: #808000;
 }
 
 .col-left .about-img{
@@ -587,15 +610,19 @@ transform: scale(1.1);
 }
 
 .contact-item:hover{
-    box-shadow: 0px 0px 3px 0 crimson;
+    box-shadow: 1px 1px 13px 0 goldenrod;
+}
+
+.contact-info p{
+    font-size: 14px;
 }
 
 .contact-info a{
-    color: crimson;
+    color: goldenrod;
 }
 
 .contact-info a:hover{
-    color: rgb(135, 14, 38);
+    color: olive;
     }
 
 /* Contact End */
@@ -635,6 +662,7 @@ transform: scale(1.1);
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 .social{
@@ -723,6 +751,11 @@ transform: scale(1.1);
         flex-basis: 40%;
     }
 
+    .project-info p{
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+
     .all-projects .project-img{
         flex-basis: 125%;
         width: 100%;
@@ -786,8 +819,9 @@ transform: scale(1.1);
     /* Navigation */
 
     .brand h1{
-        font-size: 26px;
+        font-size: 28px;
     }
+
     .foot-brand{
     color: antiquewhite;
     font-size: 14px;
